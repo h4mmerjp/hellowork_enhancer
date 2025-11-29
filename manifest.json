@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Hello Work Enhancer",
+  "version": "1.0",
+  "description": "Adds sorting and infinite scroll to Hello Work search results.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.hellowork.mhlw.go.jp/kensaku/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
